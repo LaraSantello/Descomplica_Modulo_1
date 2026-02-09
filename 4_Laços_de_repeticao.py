@@ -4,7 +4,7 @@
 #     print("Teste")
 #     a = a + 1
 
-### Laço de repetição - For
+# ## Laço de repetição - For
 # a = 1
 # for a in range(5):
 #     print("Teste")
@@ -17,7 +17,7 @@
 # for a in a:
 #     print(a)
 
-### Laços e variáveis
+# ### Laços e variáveis
 # a = []
 # b = 1
 # print(a)
@@ -72,49 +72,28 @@ else:
 
 ## Resolução de outra maneira:
 
-## Cadastro os alunos
-# nome_aluno = input("Digite o nome do aluno: ")
-# cpf_aluno = input("Digite o CPF do aluno: ") 
-# email_aluno = input("Digite o e-mail do aluno: ")
-# matricula_aluno = input("Digite a matrícula do aluno: ")
+# Cadastro os alunos
+nome_aluno = input("Digite o nome do aluno: ")
+cpf_aluno = input("Digite o CPF do aluno: ") 
+email_aluno = input("Digite o e-mail do aluno: ")
+matricula_aluno = input("Digite a matrícula do aluno: ")
 
-## Lançamento das notas
-# notas = []
-# for i in range(3):
-#     nota = float(input(f"Digite a nota {i + 1} do aluno: "))
-#     notas.append(nota)
-# media = sum(notas) / len(notas)
-# print(f"A média do aluno {nome_aluno} é: {media:.2f}")
+# Lançamento das notas
+notas = []
+for i in range(3):
+    nota = float(input(f"Digite a nota {i + 1} do aluno: "))
+    notas.append(nota)
+media = sum(notas) / len(notas)
+print(f"A média do aluno {nome_aluno} é: {media:.2f}")
 
-## Verificação da média
-# if media >= 6:
-#     print(f"Aluno {nome_aluno}, você foi aprovado com a média {media:.2f}. Seu diploma terá os seguintes dados: Nome: {nome_aluno}, CPF: {cpf_aluno}, E-mail: {email_aluno}, Matrícula: {matricula_aluno}, Média: {media:.2f}.  ")
-# else:    nota_adicional = float(input("Digite a nota adicional do aluno: "))
-# notas.append(nota_adicional)
-# nova_media = sum(notas) / len(notas)
-# print(f"A nova média do aluno {nome_aluno} é: {nova_media:.2f}")
-# if nova_media >= 6:   
-#     print(f"Aluno {nome_aluno}, você foi aprovado com a média {nova_media:.2f}. Seu diploma terá os seguintes dados: Nome: {nome_aluno}, CPF: {cpf_aluno}, E-mail: {email_aluno}, Matrícula: {matricula_aluno}, Média: {nova_media:.2f}.  ")
-# else:
-#     print("Você foi reprovado, estude mais e tente novamente no próximo semestre.")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Verificação da média
+if media >= 6:
+    print(f"Aluno {nome_aluno}, você foi aprovado com a média {media:.2f}. Seu diploma terá os seguintes dados: Nome: {nome_aluno}, CPF: {cpf_aluno}, E-mail: {email_aluno}, Matrícula: {matricula_aluno}, Média: {media:.2f}.  ")
+else:    nota_adicional = float(input("Digite a nota adicional do aluno: "))
+notas.append(nota_adicional)
+nova_media = sum(notas) / len(notas)
+print(f"A nova média do aluno {nome_aluno} é: {nova_media:.2f}")
+if nova_media >= 6:   
+    print(f"Aluno {nome_aluno}, você foi aprovado com a média {nova_media:.2f}. Seu diploma terá os seguintes dados: Nome: {nome_aluno}, CPF: {cpf_aluno}, E-mail: {email_aluno}, Matrícula: {matricula_aluno}, Média: {nova_media:.2f}.  ")
+else:
+    print("Você foi reprovado, estude mais e tente novamente no próximo semestre.")
